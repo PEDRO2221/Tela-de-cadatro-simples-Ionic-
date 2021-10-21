@@ -1,20 +1,46 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <div class="flex-center">
+    <ion-card color="success">
+      <ion-card-header>
+        <ion-card-title>
+          <strong>Cadastro</strong>
+        </ion-card-title>
+      </ion-card-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+      <ion-card-content>
+        <div>
+          <ion-item color="success" lines="none">
+            <ion-label position="floating">Email:</ion-label>
+            <ion-input type="email" required="true"></ion-input>
+          </ion-item>
+          <ion-item color="success" lines="none">
+            <ion-label position="floating">Senha:</ion-label>
+            <ion-input type="password" required="true"></ion-input>
+          </ion-item>
+          <ion-item color="success" lines="none">
+            <ion-label position="floating">Confimar senha:</ion-label>
+            <ion-input type="password" required="true"></ion-input>
+          </ion-item>
+          <ion-item color="success" lines="none">
+            <ion-label position="floating">Nome:</ion-label>
+            <ion-input type="text" required="true"></ion-input>
+          </ion-item>
+        </div>
+        <div class="flex-center ion-border">
+          <ion-item color="success" lines="none">
+            <ion-button fill="clear" size="small">
+              <p>esqueci a senha</p>
+            </ion-button>
+          </ion-item>
+        </div>
+        <div class="flex-center">
+          <ion-item color="success" lines="none">
+            <ion-button class="resgiter" fill="clear" size="large" expand="full">
+              Cadastrar
+            </ion-button>
+          </ion-item>
+        </div>  
+      </ion-card-content>
+    </ion-card>
   </div>
 </ion-content>
